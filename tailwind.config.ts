@@ -11,8 +11,8 @@ const config: Config = {
         line: "#dbe3ee",
       },
       fontFamily: {
-        display: ["Inter", "Arial", "sans-serif"],
-        mono: ["IBM Plex Mono", "Consolas", "monospace"],
+        display: ["var(--font-sans)", "Arial", "sans-serif"],
+        mono: ["var(--font-mono)", "Consolas", "monospace"],
       },
       boxShadow: { mail: "0 18px 50px rgba(15,23,42,.12)" },
     },
