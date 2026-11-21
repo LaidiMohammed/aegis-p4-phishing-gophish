@@ -1,4 +1,4 @@
-import PhishInbox from "@/components/PhishInbox";
+import Console from "@/components/Console";
 import Reveal from "@/components/Reveal";
 
 const FUNCS = [
@@ -32,7 +32,7 @@ export default function Page() {
           <Reveal delay={210}><div className="mt-8 flex flex-wrap gap-3"><a href="#sim" className="rounded-lg bg-brand px-6 py-3 text-xs font-bold uppercase tracking-widest text-white hover:bg-brand2">Voir la simulation ↓</a><a href="#fonctions" className="rounded-lg border border-line px-6 py-3 text-xs font-semibold uppercase tracking-widest text-slate-600 hover:border-brand">Les fonctions</a></div></Reveal>
           <Reveal delay={280}><div className="mt-10 grid grid-cols-4 gap-4 border-t border-line pt-6">{[["02","services"],["07","tests mocks"],["1","fake login"],["00","internet"]].map(([n,l])=><div key={l}><div className="text-2xl font-extrabold">{n}</div><div className="coord text-slate-400">{l}</div></div>)}</div></Reveal>
         </div>
-        <Reveal delay={120}><PhishInbox /></Reveal>
+        <Reveal delay={120}><Console /></Reveal>
       </section>
 
       <section id="sim" className="mx-auto max-w-7xl px-5 py-14">
